@@ -6,13 +6,11 @@ I am an undergraduate student majoring in Computer Science and Technology at the
 
 #### Contact
 
-Email: 202411000534@stu.sdnu.edu.cn\
-       &emsp;208830292@qq.com
+Email: 202411000534@stu.sdnu.edu.cn/208830292@qq.com
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+Computer Science and Technology, Shandong Normal University, 2024—now.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Deep Learning, Reinforecement Learning, Code Generation, Multi-Agent.
 
