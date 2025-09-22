@@ -6,7 +6,7 @@ I am an undergraduate student majoring in Computer Science and Technology at the
 
 #### Contact
 
-Email: 202411000534@stu.sdnu.edu.cn/
+Email: 202411000534@stu.sdnu.edu.cn\
        208830292@qq.com
 
 #### Education
