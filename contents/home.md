@@ -7,7 +7,7 @@ I am an undergraduate student majoring in Computer Science and Technology at the
 #### Contact
 
 Email: 202411000534@stu.sdnu.edu.cn\
-       208830292@qq.com
+       &emsp;208830292@qq.com
 
 #### Education
 M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
