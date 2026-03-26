@@ -1,5 +1,6 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-puppet0x3f-181717?logo=github)](https://github.com/puppet0x3f)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Huang%20Kangjie-4285F4?logo=google-scholar)](https://scholar.google.com.hk/citations?user=mJ6-9OMAAAAJ&hl=zh-CN)
 
 I am an undergraduate student majoring in **Computer Science and Technology** at the [School of Information Science and Technology](https://www.sdnu.edu.cn/), [Shandong Normal University](https://www.sdnu.edu.cn/).
 
@@ -14,9 +15,7 @@ I joined the university ACM team during my first semester and began research in 
 
 - **B.Sc. in Computer Science and Technology**, Shandong Normal University, 2024—Present
 
-#### Research Interests
+#### Advisor
 
-- Deep Learning for Code Representation
-- Reinforcement Learning for Program Synthesis
-- Trustworthy AI in Software Engineering
-- Multi-Agent Systems
+- **Chen Lyu** (吕晨), [Personal Homepage](https://chenlyusdnu.github.io/me/)
+

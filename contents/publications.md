@@ -1,9 +1,6 @@
 
-#### In Preparation
+#### 2025
 
-- Working on manuscripts related to trustworthy code generation and reinforcement learning for program synthesis.
+- **FS-FlowNet: Frequency–Spatial Dual-Domain Residual Flow Network for Remote Sensing Dehazing**. *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, 2025. [View on IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11390698)
 
-#### Note
-
-I am an undergraduate researcher and currently building my publication record. Please check back later for updates on my research publications.
 
