@@ -1,7 +1,15 @@
 
-- 国家级创新训练项目(负责人):工业级复杂编程任务中的可信代码生成核心技术研究, 2025-now.\
-本项目聚焦工业级复杂编程任务，针对当前在可信代码生成中面临的三项核心瓶颈：多模态语义表征不完备、算法技能的多阶段规划能力不足，以及生成过程的决策链条不可追溯，系统性攻克相关关键科学问题，有助于提升我国高端工业软件在研发效率、生成质量与可信保障等方面的整体水平。
+#### Research Grants & Projects
 
-- 天梯赛团队国家三等奖, 2025.
+**National Innovation Training Project** (Principal Investigator), 2025–Present
+- *Title*: Core Technologies for Trustworthy Code Generation in Industrial-Level Complex Programming Tasks
+- *Description*: This project addresses three core challenges in trustworthy code generation: multimodal semantic representation, multi-stage planning for algorithmic skills, and interpretable decision chains.
 
+#### Honors & Awards
 
+- **Third Prize, Team Category** - Lanqiao Cup Programming Contest (National Level), 2025
+- **ACM Team Member** - Shandong Normal University, since 2024
+
+#### Competitive Programming
+
+Active participant in competitive programming contests, with experience in algorithmic problem solving and team collaboration.

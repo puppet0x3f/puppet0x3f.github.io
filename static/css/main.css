@@ -2,16 +2,23 @@
 
 
 :root{
-    --h-title-color:#3948d2;
+    --h-title-color: #1e3a5f;
+    --academic-blue: #1e3a5f;
+    --academic-light: #f8f9fa;
+    --academic-gray: #e9ecef;
+    --text-dark: #212529;
+    --link-color: #0056b3;
 }
 
 .header {
-    border-bottom: solid 2px var(--bs-blue);
+    border-bottom: solid 2px var(--academic-blue);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
     z-index: 10000;
 }
 
 .bg-bottom {
-    background-color: var(--h-title-color);
+    background-color: var(--academic-blue);
 }
 
 .top-section {
@@ -24,6 +31,7 @@
 
 .top-section h2 {
     font-weight: 400;
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
 }
 
 .top-section .top-section-content {
@@ -38,32 +46,54 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(30, 58, 95, 0.6);
 }
 
 section header h2{
-    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: "Newsreader", Georgia, "Times New Roman", serif !important;
     color: var(--h-title-color);
-    font-size: 2.3rem;
-    line-height: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--academic-blue);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 section .main-body{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 2.4rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--text-dark);
+    text-align: justify;
 }
 
+section .main-body h4 {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    color: var(--academic-blue);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+section .main-body a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+section .main-body a:hover {
+    border-bottom-color: var(--link-color);
+}
 
 .bg-gradient-primary-to-secondary-light {
-    background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
+    background: var(--academic-light) !important;
 }
 
 .bg-gradient-primary-to-secondary-gray {
-    background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
+    background: var(--academic-gray) !important;
 }
-
-
 
 .on-top {
     position: relative;
@@ -84,7 +114,7 @@ section .main-body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(30, 58, 95, 0.4);
 }
 
 
@@ -100,7 +130,9 @@ section .main-body{
 
 #avatar img {
     height: max(130px,min(200px,calc(100vw/6)));
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 3px solid white;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 991px) {
@@ -109,4 +141,35 @@ section .main-body{
     }
 }
 
+/* Academic Social Links */
+.social-links a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.2s;
+}
 
+.social-links a:hover {
+    color: white;
+}
+
+/* Navigation improvements */
+.navbar-brand {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-weight: 600 !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.mt5 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.md5 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
