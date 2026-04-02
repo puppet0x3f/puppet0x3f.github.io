@@ -23,7 +23,9 @@ The research aims to advance the state-of-the-art in automated programming assis
 #### Collaborators
 
 - **Jinrui Han** (韩进瑞), Class of 2025, M.S. Student, School of Information Science and Technology, Shandong Normal University, Computer Science and Technology
+- **Dong Liu** (刘栋), Class of 2025, Undergraduate Student, School of Information Science and Technology, Shandong Normal University, Computer Science and Technology
 - **Jingxin Ren** (任敬信), Class of 2025, M.S. Student, School of Information Science and Technology, Shandong Normal University, Computer Science and Technology
 - **Yucheng Xin** (辛裕城), Class of 2024, Undergraduate Student, School of Information Science and Technology, Shandong Normal University, Computer Science and Technology
 - **Xinchun Wang** (王新春), Class of 2024, Undergraduate Student, School of Information Science and Technology, Shandong Normal University, Computer Science and Technology
+- **Daokun Shang** (尚道坤), Class of 2025, Undergraduate Student, School of Information Science and Technology, Shandong Normal University, Computer Science and Technology
 
