@@ -1,5 +1,51 @@
 title: Huang Kangjie's Homepage
 page-top-title: Huang Kangjie
-top-section-bg-text: Computer Science
-about-subtitle: Huang Kangjie&ensp;|&ensp;黄康杰
-copyright-text: '&copy; Huang Kangjie 2023-2025. All Rights Reserved.'
+about-subtitle: Huang Kangjie | 黄康杰
+research-subtitle: '<i class="bi bi-journal-text"></i> Research'
+publications-subtitle: '<i class="bi bi-file-text-fill"></i> Publications'
+awards-subtitle: '<i class="bi bi-award-fill"></i> Awards'
+copyright-text: '&copy; Huang Kangjie 2023-2026. All Rights Reserved.'
+
+hero-eyebrow: Undergraduate Researcher in Computer Science
+hero-name: Huang Kangjie
+hero-chinese-name: 黄康杰
+hero-subtitle: Computer Science and Technology, Shandong Normal University
+hero-summary: I work on trustworthy code generation for complex industrial programming tasks, with interests in reinforcement learning, interpretable decision chains, and AI systems that make software development more reliable.
+hero-focus-label: Research Focus
+hero-focus-value: Trustworthy Code Generation
+
+github_url: https://github.com/puppet0x3f
+scholar_url: https://scholar.google.com.hk/citations?user=mJ6-9OMAAAAJ&hl=zh-CN
+email_href: mailto:202411000534@stu.sdnu.edu.cn
+
+hero_keywords:
+  - label: Trustworthy AI
+    color: '#0f8ea8'
+  - label: Code Generation
+    color: '#6854d9'
+  - label: Reinforcement Learning
+    color: '#2d8f69'
+  - label: Software Engineering
+    color: '#c88721'
+
+profile_links:
+  - label: GitHub
+    href: https://github.com/puppet0x3f
+    icon: github
+  - label: Google Scholar
+    href: https://scholar.google.com.hk/citations?user=mJ6-9OMAAAAJ&hl=zh-CN
+    icon: scholar
+  - label: Email
+    href: mailto:202411000534@stu.sdnu.edu.cn
+    icon: email
+
+research_highlights:
+  - title: Semantic Representation
+    text: Model syntactic and semantic properties of code for reliable generation.
+    color: '#0f8ea8'
+  - title: Multi-stage Planning
+    text: Study hierarchical planning and reinforcement learning for programming tasks.
+    color: '#6854d9'
+  - title: Interpretable Decisions
+    text: Make generated solutions easier to trace, inspect, and trust.
+    color: '#2d8f69'
