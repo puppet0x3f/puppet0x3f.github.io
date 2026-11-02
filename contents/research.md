@@ -3,31 +3,14 @@ My research focuses on **Trustworthy Code Generation** for industrial-level comp
 ### Current Project
 
 **Trustworthy Code Generation for Industrial-Level Complex Programming Tasks**  
-*National Innovation Training Project, Principal Investigator, 2025-present*
+*National Innovation Training Project, Principal Investigator, 2025–present*
 
 This project studies how generated programs can become more reliable and easier to inspect. The work is organized around three technical questions: how to represent code semantics, how to plan complex solutions in multiple stages, and how to expose decision chains that users can understand.
 
-<div class="research-card-grid">
-  <section class="research-card" style="--accent: #0f8ea8">
-    <h4><i class="bi bi-diagram-3"></i> Multimodal Semantic Representation</h4>
-    <p>Develop representations that capture both syntactic structures and semantic properties of source code.</p>
-  </section>
-
-  <section class="research-card" style="--accent: #6854d9">
-    <h4><i class="bi bi-layers"></i> Multi-stage Planning</h4>
-    <p>Use hierarchical planning mechanisms to improve algorithmic skill acquisition and task decomposition.</p>
-  </section>
-
-  <section class="research-card" style="--accent: #2d8f69">
-    <h4><i class="bi bi-search"></i> Interpretable Decision Chains</h4>
-    <p>Make the code generation process traceable so developers can inspect and reason about model decisions.</p>
-  </section>
-
-  <section class="research-card" style="--accent: #c88721">
-    <h4><i class="bi bi-tools"></i> Industrial Programming Tasks</h4>
-    <p>Study generation settings closer to real software development, including long-context and multi-step tasks.</p>
-  </section>
-</div>
+- **Multimodal Semantic Representation.** Develop representations that capture both syntactic structures and semantic properties of source code.
+- **Multi-stage Planning.** Use hierarchical planning mechanisms to improve algorithmic skill acquisition and task decomposition.
+- **Interpretable Decision Chains.** Make the code generation process traceable so developers can inspect and reason about model decisions.
+- **Industrial Programming Tasks.** Study generation settings closer to real software development, including long-context and multi-step tasks.
 
 ### Research Interests
 

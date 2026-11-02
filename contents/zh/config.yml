@@ -1,0 +1,39 @@
+title: 黄康杰 | 学术主页
+description: 黄康杰的学术主页：可信代码生成、强化学习与软件工程。山东师范大学计算机科学与技术本科生。
+page-top-title: 黄康杰的主页
+about-subtitle: 个人简介
+research-subtitle: 研究方向
+publications-subtitle: 学术论文
+awards-subtitle: 荣誉与经历
+contact-subtitle: 联系
+copyright-text: © 黄康杰 2023–2026. 保留所有权利。
+
+hero-name: 黄康杰
+hero-chinese-name: Huang Kangjie
+hero-eyebrow: 计算机科学与技术 · 本科生
+hero-subtitle: 山东师范大学
+photo-alt: 黄康杰的个人照片
+
+ui:
+  nav-about: 首页
+  nav-research: 研究方向
+  nav-publications: 学术论文
+  nav-awards: 荣誉与经历
+  nav-contact: 联系
+  nav-cv: 简历
+  skip-link: 跳至正文
+  navigation-label: 主导航
+  menu-label: 展开或收起导航
+  photo-open-label: 查看黄康杰的完整照片
+  back-to-top: 返回顶部
+
+profile_links:
+  - label: 电子邮箱
+    href: mailto:202411000534@stu.sdnu.edu.cn
+    icon: email
+  - label: 谷歌学术
+    href: https://scholar.google.com.hk/citations?user=mJ6-9OMAAAAJ&hl=zh-CN
+    icon: scholar
+  - label: GitHub
+    href: https://github.com/puppet0x3f
+    icon: github

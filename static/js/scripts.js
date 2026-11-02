@@ -1,185 +1,154 @@
-const content_dir = 'contents/'
-const config_file = 'config.yml'
-const section_names = ['about', 'research', 'publications', 'awards']
+const sectionNames = ['about', 'research', 'publications', 'awards', 'contact']
+const languageCache = new Map()
+const iconMap = { github: 'bi-github', scholar: 'bi-book', email: 'bi-envelope', website: 'bi-link-45deg' }
+let languageRequest = 0
+let scrollSpy
 
-const iconMap = {
-    github: 'bi-github',
-    scholar: 'bi-mortarboard',
-    email: 'bi-envelope',
-    cv: 'bi-file-earmark-text',
-    website: 'bi-link-45deg'
-}
-
-function setHtml(id, value) {
+function setText(id, value) {
     const element = document.getElementById(id)
-    if (element && value !== undefined && value !== null) {
-        element.innerHTML = value
-    }
+    if (element && value !== undefined) element.textContent = value
 }
 
-function setHref(id, value) {
-    const element = document.getElementById(id)
-    if (element && value) {
-        element.setAttribute('href', value)
-    }
+function initialLanguage() {
+    try {
+        const saved = localStorage.getItem('homepage-language')
+        if (saved === 'zh' || saved === 'en') return saved
+    } catch (_) { /* The website also works when browser storage is unavailable. */ }
+    return navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en'
 }
 
-function renderKeywords(keywords = []) {
-    const container = document.getElementById('hero-keywords')
-    if (!container) return
+async function fetchText(path) {
+    const response = await fetch(path, { cache: 'no-cache' })
+    if (!response.ok) throw new Error('Unable to load ' + path + ': ' + response.status)
+    return response.text()
+}
 
-    container.innerHTML = keywords.map((keyword, index) => {
-        const colors = ['#0f8ea8', '#6854d9', '#2d8f69', '#c88721']
-        const color = keyword.color || colors[index % colors.length]
-        return `<span class="keyword" style="--keyword-color: ${color}">${keyword.label || keyword}</span>`
-    }).join('')
+function loadLanguage(language) {
+    if (!languageCache.has(language)) {
+        const directory = language === 'en' ? 'contents/' : 'contents/zh/'
+        const request = Promise.all([
+            fetchText(directory + 'config.yml').then(text => jsyaml.load(text)),
+            ...sectionNames.map(name => fetchText(directory + name + '.md'))
+        ]).catch(error => {
+            languageCache.delete(language)
+            throw error
+        })
+        languageCache.set(language, request)
+    }
+    return languageCache.get(language)
 }
 
 function renderHeroLinks(links = []) {
     const container = document.getElementById('hero-links')
-    if (!container) return
-
-    container.innerHTML = links.map(link => {
-        const icon = iconMap[link.icon] || iconMap.website
-        const target = link.href && link.href.startsWith('mailto:') ? '' : ' target="_blank"'
-        return `<a class="hero-link" href="${link.href}"${target}><i class="bi ${icon}"></i>${link.label}</a>`
-    }).join('')
-}
-
-function renderHighlights(highlights = []) {
-    const container = document.getElementById('research-highlights')
-    if (!container) return
-
-    const colors = ['#0f8ea8', '#6854d9', '#2d8f69']
-    container.innerHTML = highlights.map((item, index) => {
-        const color = item.color || colors[index % colors.length]
-        return `
-            <article class="highlight-card reveal-item" style="--accent: ${color}">
-                <h3>${item.title}</h3>
-                <p>${item.text}</p>
-            </article>
-        `
-    }).join('')
-}
-
-function prepareRevealItems(root = document) {
-    root.querySelectorAll('.content-panel > h3, .content-panel > h4, .content-panel > p, .content-panel > ul, .info-card, .research-card, .publication-item')
-        .forEach(item => item.classList.add('reveal-item'))
-}
-
-function setupRevealObserver() {
-    const items = document.querySelectorAll('.reveal-section, .reveal-item')
-    if (!items.length) return
-
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
-        items.forEach(item => item.classList.add('is-visible'))
-        return
-    }
-
-    const observer = new IntersectionObserver((entries, instance) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible')
-                instance.unobserve(entry.target)
-            }
-        })
-    }, {
-        rootMargin: '0px 0px -8% 0px',
-        threshold: 0.12
-    })
-
-    items.forEach(item => observer.observe(item))
-}
-
-function setupNavbarState() {
-    const mainNav = document.body.querySelector('#mainNav')
-    if (!mainNav) return
-
-    const update = () => {
-        mainNav.classList.toggle('nav-scrolled', window.scrollY > 18)
-    }
-
-    update()
-    window.addEventListener('scroll', update, { passive: true })
-}
-
-function setupOptionalCvLink() {
-    const cvLink = document.getElementById('cv-link')
-    const cvNavItem = document.getElementById('cv-nav-item')
-    if (!cvLink || !cvNavItem) return
-
-    fetch(cvLink.getAttribute('href'), { method: 'HEAD' })
-        .then(response => {
-            if (!response.ok) {
-                cvNavItem.remove()
-            }
-        })
-        .catch(() => cvNavItem.remove())
-}
-
-window.addEventListener('DOMContentLoaded', event => {
-    const mainNav = document.body.querySelector('#mainNav')
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 82,
-        })
-    }
-
-    const navbarToggler = document.body.querySelector('.navbar-toggler')
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    )
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (navbarToggler && window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click()
-            }
-        })
-    })
-
-    setupNavbarState()
-    setupOptionalCvLink()
-
-    fetch(content_dir + config_file)
-        .then(response => response.text())
-        .then(text => {
-            const yml = jsyaml.load(text)
-
-            Object.keys(yml).forEach(key => {
-                if (typeof yml[key] === 'string' || typeof yml[key] === 'number') {
-                    setHtml(key, yml[key])
-                }
-            })
-
-            setHref('github-link', yml.github_url)
-            setHref('scholar-link', yml.scholar_url)
-            setHref('email-link', yml.email_href)
-            renderKeywords(yml.hero_keywords)
-            renderHeroLinks(yml.profile_links)
-            renderHighlights(yml.research_highlights)
-            setupRevealObserver()
-        })
-        .catch(error => console.log(error))
-
-    marked.use({ mangle: false, headerIds: false })
-    const markdownFetches = section_names.map(name => {
-        return fetch(content_dir + name + '.md')
-            .then(response => response.text())
-            .then(markdown => {
-                const html = marked.parse(markdown)
-                document.getElementById(name + '-md').innerHTML = html
-            })
-            .catch(error => console.log(error))
-    })
-
-    Promise.all(markdownFetches).then(() => {
-        prepareRevealItems()
-        setupRevealObserver()
-        if (window.MathJax && MathJax.typesetPromise) {
-            MathJax.typesetPromise()
-        } else if (window.MathJax && MathJax.typeset) {
-            MathJax.typeset()
+    container.replaceChildren(...links.map(link => {
+        const anchor = document.createElement('a')
+        anchor.className = 'profile-social-link'
+        anchor.href = link.href
+        anchor.title = link.label
+        anchor.setAttribute('aria-label', link.label)
+        if (!link.href.startsWith('mailto:')) {
+            anchor.target = '_blank'
+            anchor.rel = 'noopener noreferrer'
         }
+        const icon = document.createElement('i')
+        icon.className = 'bi ' + (iconMap[link.icon] || iconMap.website)
+        icon.setAttribute('aria-hidden', 'true')
+        anchor.append(icon)
+        return anchor
+    }))
+}
+
+// Preserve formula support without downloading MathJax on pages that have no formulas.
+function typesetMath(markdown) {
+    if (!/\$|\\\(|\\\[|\\begin\{/.test(markdown)) return
+    if (!window.MathJax) {
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } }
+        const script = document.createElement('script')
+        script.src = 'static/js/tex-svg.js'
+        script.onload = () => window.MathJax.startup.promise.then(() => window.MathJax.typesetPromise())
+        document.head.append(script)
+    } else if (window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise()
+    }
+}
+
+async function setLanguage(language) {
+    const request = ++languageRequest
+    const status = document.getElementById('content-status')
+    document.getElementById('main-content').setAttribute('aria-busy', 'true')
+    try {
+        const [config, ...markdown] = await loadLanguage(language)
+        if (request !== languageRequest) return
+
+        Object.entries(config).forEach(([key, value]) => {
+            if (typeof value === 'string' || typeof value === 'number') setText(key, value)
+        })
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            element.textContent = config.ui[element.dataset.i18n]
+        })
+        document.querySelectorAll('[data-i18n-label]').forEach(element => {
+            element.setAttribute('aria-label', config.ui[element.dataset.i18nLabel])
+            element.title = config.ui[element.dataset.i18nLabel]
+        })
+        sectionNames.forEach((name, index) => {
+            document.getElementById(name + '-md').innerHTML = marked.parse(markdown[index])
+        })
+        document.querySelectorAll('.main-body i.bi').forEach(icon => icon.setAttribute('aria-hidden', 'true'))
+        document.querySelectorAll('a[target="_blank"]').forEach(anchor => {
+            anchor.rel = 'noopener noreferrer'
+        })
+
+        document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en'
+        document.title = config.title
+        document.querySelector('meta[name="description"]').content = config.description
+        document.getElementById('hero-photo').alt = config['photo-alt']
+        document.getElementById('hero-chinese-name').lang = language === 'zh' ? 'en' : 'zh-CN'
+        document.getElementById('mainNav').setAttribute('aria-label', config.ui['navigation-label'])
+        document.querySelector('.navbar-toggler').setAttribute('aria-label', config.ui['menu-label'])
+        document.querySelectorAll('[data-language]').forEach(button => {
+            button.setAttribute('aria-pressed', String(button.dataset.language === language))
+        })
+        document.getElementById('cv-nav-item').hidden = !config.cv_url
+        if (config.cv_url) document.getElementById('cv-link').href = config.cv_url
+        renderHeroLinks(config.profile_links)
+        typesetMath(markdown.join('\n'))
+        if (scrollSpy) scrollSpy.refresh()
+        status.textContent = ''
+        try { localStorage.setItem('homepage-language', language) } catch (_) { /* Optional preference. */ }
+    } catch (error) {
+        if (request !== languageRequest) return
+        status.textContent = language === 'zh'
+            ? '内容加载失败，请刷新页面后重试。'
+            : 'Content could not be loaded. Please refresh the page to try again.'
+        console.error(error)
+    } finally {
+        if (request === languageRequest) document.getElementById('main-content').removeAttribute('aria-busy')
+    }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    marked.use({ mangle: false, headerIds: false })
+    const mainNav = document.getElementById('mainNav')
+    const updateNavbar = () => mainNav.classList.toggle('nav-scrolled', window.scrollY > 18)
+    updateNavbar()
+    window.addEventListener('scroll', updateNavbar, { passive: true })
+
+    const menu = document.getElementById('navbarResponsive')
+    const closeMenu = () => bootstrap.Collapse.getOrCreateInstance(menu, { toggle: false }).hide()
+    document.querySelectorAll('#navbarResponsive .nav-link').forEach(anchor => {
+        anchor.addEventListener('click', () => {
+            // A quick tap can arrive before Bootstrap's opening animation finishes.
+            if (menu.classList.contains('collapsing') && document.querySelector('.navbar-toggler').getAttribute('aria-expanded') === 'true') {
+                menu.addEventListener('shown.bs.collapse', closeMenu, { once: true })
+            } else {
+                closeMenu()
+            }
+        })
     })
+    scrollSpy = new bootstrap.ScrollSpy(document.body, { target: '#mainNav', offset: 100 })
+    document.querySelectorAll('[data-language]').forEach(button => {
+        button.addEventListener('click', () => setLanguage(button.dataset.language))
+    })
+
+    setLanguage(initialLanguage())
 })
