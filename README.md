@@ -2,7 +2,9 @@
 
 基于 HTML、CSS 和 JavaScript 的静态网站，可直接部署到 GitHub Pages，无需构建。
 
-布局参考 [Zongqing Lu 的学术主页](https://z0ngqing.github.io/)：圆形头像与身份信息居左，个人介绍居右；后续栏目使用左标题、右内容的布局。白色与浅灰色背景交替，链接使用蓝色。
+设计参考北京大学[李戈](https://ligechina.github.io/)、[万小军](https://wanxiaojun.github.io/)，以及清华大学[朱军](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml)、[唐杰](https://keg.cs.tsinghua.edu.cn/persons/jietang/)的个人学术主页。
+
+采用白底、蓝色链接和连续的正文布局；桌面端个人资料栏随页面保留，手机端切换为紧凑的横向个人介绍。论文按年份展示并前移，研究项目分层展示，合作伙伴名单可展开查看。参考网站仅用于布局与视觉设计。
 
 ## 本地预览
 
@@ -39,4 +41,4 @@ cv_url: static/assets/CV.pdf
 
 基于 [Sen Li 的学术主页模板](https://github.com/senli1073/senli1073.github.io) 与 Start Bootstrap New Age 修改，保留原项目 [MIT 许可](LICENSE)。
 
-Bootstrap Icons 的许可保存在 static/assets/icons/LICENSE.md。Lato 与 Merriweather 字体及其 OFL 许可位于 static/assets/fonts，中文使用系统字体。脚本、字体、图标和照片均保存在本地资源目录中。
+Bootstrap Icons 的许可保存在 static/assets/icons/LICENSE.md。页面使用本地 Lato 字体，中文使用系统字体；字体及其 OFL 许可位于 static/assets/fonts。脚本、字体、图标和照片均保存在本地资源目录中。

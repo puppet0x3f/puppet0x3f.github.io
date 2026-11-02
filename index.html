@@ -11,18 +11,18 @@
     <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
     <link rel="stylesheet" href="static/assets/icons/bootstrap-icons.css" />
     <link rel="stylesheet" href="static/css/styles.css" />
-    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/main.css?v=20261102-2" />
     <script defer src="static/js/bootstrap.bundle.min.js"></script>
     <script defer src="static/js/marked.min.js"></script>
     <script defer src="static/js/js-yaml.min.js"></script>
-    <script defer src="static/js/scripts.js"></script>
+    <script defer src="static/js/scripts.js?v=20261102-2"></script>
 </head>
 
 <body id="page-top">
     <a class="skip-link" href="#about" data-i18n="skip-link">跳至正文</a>
     <nav class="header navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="主导航">
         <div class="container site-container">
-            <a id="page-top-title" class="navbar-brand" href="#about">黄康杰的主页</a>
+            <a id="page-top-title" class="navbar-brand" href="#about">黄康杰</a>
             <div class="nav-tools">
                 <div class="language-switch" role="group" aria-label="Language / 语言">
                     <button type="button" data-language="zh" lang="zh-CN" aria-pressed="true">中文</button>
@@ -36,10 +36,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav-about">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#research" data-i18n="nav-research">研究方向</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications" data-i18n="nav-publications">学术论文</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#awards" data-i18n="nav-awards">荣誉与经历</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav-about">关于</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications" data-i18n="nav-publications">论文</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research" data-i18n="nav-research">研究</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards" data-i18n="nav-awards">经历</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav-contact">联系</a></li>
                     <li class="nav-item" id="cv-nav-item" hidden><a id="cv-link" class="nav-link" href="static/assets/CV.pdf" target="_blank" rel="noopener noreferrer" data-i18n="nav-cv">简历</a></li>
                 </ul>
@@ -47,63 +47,54 @@
         </div>
     </nav>
 
-    <main id="main-content">
-        <p id="content-status" class="content-status" role="status" aria-live="polite"></p>
-        <section class="home-section biography-section" id="about" aria-labelledby="hero-name">
-            <div class="container site-container profile-layout">
-                <aside class="profile-sidebar">
-                    <a class="portrait" href="static/assets/img/kangjie-huang.jpg" target="_blank" rel="noopener noreferrer" data-i18n-label="photo-open-label">
-                        <img id="hero-photo" src="static/assets/img/kangjie-huang.jpg" width="1442" height="1920"
-                            alt="黄康杰的个人照片" fetchpriority="high" decoding="async" />
-                    </a>
-                    <h1 id="hero-name" class="profile-name">黄康杰</h1>
-                    <p id="hero-chinese-name" class="profile-secondary-name" lang="en">Huang Kangjie</p>
-                    <p id="hero-eyebrow" class="profile-role">本科生</p>
-                    <p id="hero-subtitle" class="profile-affiliation">山东师范大学</p>
-                    <div id="hero-links" class="profile-social"></div>
-                </aside>
-                <article class="biography-copy main-body">
-                    <h2 id="about-subtitle" class="visually-hidden">个人简介</h2>
-                    <div class="content-panel" id="about-md"></div>
-                </article>
+    <main id="main-content" class="site-shell">
+        <aside class="profile-sidebar" aria-labelledby="hero-name">
+            <a class="portrait" href="static/assets/img/kangjie-huang.jpg" target="_blank" rel="noopener noreferrer" data-i18n-label="photo-open-label">
+                <img id="hero-photo" src="static/assets/img/kangjie-huang.jpg" width="1442" height="1920"
+                    alt="黄康杰的个人照片" fetchpriority="high" decoding="async" />
+            </a>
+            <div class="profile-identity">
+                <h1 id="hero-name" class="profile-name">黄康杰</h1>
+                <p id="hero-chinese-name" class="profile-secondary-name" lang="en">Huang Kangjie</p>
+                <p id="hero-eyebrow" class="profile-role">计算机科学与技术本科生</p>
+                <p id="hero-subtitle" class="profile-affiliation">山东师范大学</p>
+                <div id="hero-links" class="profile-social"></div>
             </div>
-        </section>
+        </aside>
 
-        <section class="home-section" id="research" aria-labelledby="research-subtitle">
-            <div class="container site-container section-layout">
-                <div class="section-heading"><h2 id="research-subtitle">研究方向</h2></div>
-                <div class="content-panel main-body" id="research-md"></div>
-            </div>
-        </section>
+        <div class="academic-content">
+            <p id="content-status" class="content-status" role="status" aria-live="polite"></p>
+            <section class="document-section" id="about" aria-labelledby="about-subtitle">
+                <h2 id="about-subtitle">关于我</h2>
+                <div class="content-panel main-body" id="about-md"></div>
+            </section>
 
-        <section class="home-section" id="publications" aria-labelledby="publications-subtitle">
-            <div class="container site-container section-layout">
-                <div class="section-heading"><h2 id="publications-subtitle">学术论文</h2></div>
+            <section class="document-section" id="publications" aria-labelledby="publications-subtitle">
+                <h2 id="publications-subtitle">学术论文</h2>
                 <div class="content-panel main-body publication-list" id="publications-md"></div>
-            </div>
-        </section>
+            </section>
 
-        <section class="home-section" id="awards" aria-labelledby="awards-subtitle">
-            <div class="container site-container section-layout">
-                <div class="section-heading"><h2 id="awards-subtitle">荣誉与经历</h2></div>
+            <section class="document-section" id="research" aria-labelledby="research-subtitle">
+                <h2 id="research-subtitle">研究与项目</h2>
+                <div class="content-panel main-body" id="research-md"></div>
+            </section>
+
+            <section class="document-section" id="awards" aria-labelledby="awards-subtitle">
+                <h2 id="awards-subtitle">荣誉与经历</h2>
                 <div class="content-panel main-body" id="awards-md"></div>
-            </div>
-        </section>
+            </section>
 
-        <section class="home-section" id="contact" aria-labelledby="contact-subtitle">
-            <div class="container site-container section-layout">
-                <div class="section-heading"><h2 id="contact-subtitle">联系</h2></div>
+            <section class="document-section" id="contact" aria-labelledby="contact-subtitle">
+                <h2 id="contact-subtitle">联系方式</h2>
                 <div class="content-panel main-body" id="contact-md"></div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <footer class="site-footer">
-        <div class="container site-container">
-            <p id="copyright-text">© 黄康杰 2023–2026. 保留所有权利。</p>
-            <a class="back-to-top" href="#page-top" data-i18n-label="back-to-top"><i class="bi bi-chevron-up" aria-hidden="true"></i></a>
+            <footer class="site-footer">
+                <p id="copyright-text">© 黄康杰 2023–2026. 保留所有权利。</p>
+                <a class="back-to-top" href="#page-top" data-i18n-label="back-to-top"><i class="bi bi-arrow-up" aria-hidden="true"></i></a>
+            </footer>
         </div>
-    </footer>
+    </main>
     <noscript><p class="noscript-note">请启用 JavaScript 以加载完整内容和切换语言。Please enable JavaScript to load the full website and switch languages.</p></noscript>
 </body>
 

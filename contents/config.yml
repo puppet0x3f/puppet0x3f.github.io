@@ -1,10 +1,10 @@
 title: Huang Kangjie | Academic Homepage
 description: Academic homepage of Huang Kangjie, a computer science undergraduate at Shandong Normal University working on trustworthy code generation, reinforcement learning, and software engineering.
-page-top-title: Huang Kangjie's Homepage
-about-subtitle: Biography
-research-subtitle: Research
-publications-subtitle: Publications
-awards-subtitle: Honors
+page-top-title: Huang Kangjie
+about-subtitle: About Me
+research-subtitle: Research & Projects
+publications-subtitle: Selected Publications
+awards-subtitle: Honors & Experience
 contact-subtitle: Contact
 copyright-text: © Huang Kangjie 2023–2026. All rights reserved.
 
@@ -15,7 +15,7 @@ hero-subtitle: Shandong Normal University
 photo-alt: Portrait of Huang Kangjie
 
 ui:
-  nav-about: Home
+  nav-about: About
   nav-research: Research
   nav-publications: Publications
   nav-awards: Honors

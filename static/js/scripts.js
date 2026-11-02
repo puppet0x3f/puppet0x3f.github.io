@@ -53,7 +53,9 @@ function renderHeroLinks(links = []) {
         const icon = document.createElement('i')
         icon.className = 'bi ' + (iconMap[link.icon] || iconMap.website)
         icon.setAttribute('aria-hidden', 'true')
-        anchor.append(icon)
+        const label = document.createElement('span')
+        label.textContent = link.label
+        anchor.append(icon, label)
         return anchor
     }))
 }
