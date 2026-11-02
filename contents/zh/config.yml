@@ -26,6 +26,8 @@ ui:
   menu-label: 展开或收起导航
   photo-open-label: 查看黄康杰的完整照片
   back-to-top: 返回顶部
+  figure-close: 关闭大图
+  figure-original: 查看原图
 
 profile_links:
   - label: 电子邮箱

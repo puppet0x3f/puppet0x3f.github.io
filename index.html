@@ -11,11 +11,11 @@
     <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
     <link rel="stylesheet" href="static/assets/icons/bootstrap-icons.css" />
     <link rel="stylesheet" href="static/css/styles.css" />
-    <link rel="stylesheet" href="static/css/main.css?v=20261103-1" />
+    <link rel="stylesheet" href="static/css/main.css?v=20261103-2" />
     <script defer src="static/js/bootstrap.bundle.min.js"></script>
     <script defer src="static/js/marked.min.js"></script>
     <script defer src="static/js/js-yaml.min.js"></script>
-    <script defer src="static/js/scripts.js?v=20261102-3"></script>
+    <script defer src="static/js/scripts.js?v=20261103-2"></script>
 </head>
 
 <body id="page-top">
@@ -95,6 +95,14 @@
             </footer>
         </div>
     </main>
+    <dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-dialog-title">
+        <div class="figure-dialog-header">
+            <h2 id="figure-dialog-title"></h2>
+            <a id="figure-original" target="_blank" rel="noopener noreferrer" data-i18n="figure-original">查看原图</a>
+            <button id="figure-close" type="button" data-i18n-label="figure-close" aria-label="关闭大图" autofocus><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+        </div>
+        <div class="figure-dialog-content"><img id="figure-dialog-image" alt="" /></div>
+    </dialog>
     <noscript><p class="noscript-note">请启用 JavaScript 以加载完整内容和切换语言。Please enable JavaScript to load the full website and switch languages.</p></noscript>
 </body>
 

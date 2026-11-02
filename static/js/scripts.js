@@ -60,6 +60,28 @@ function renderHeroLinks(links = []) {
     }))
 }
 
+function setupPublicationFigures() {
+    const dialog = document.getElementById('figure-dialog')
+    const image = document.getElementById('figure-dialog-image')
+    document.getElementById('publications-md').addEventListener('click', event => {
+        const figure = event.target.closest('.publication-figure')
+        if (!figure || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return
+        event.preventDefault()
+        image.src = figure.href
+        image.alt = figure.querySelector('img').alt
+        setText('figure-dialog-title', figure.dataset.figureTitle)
+        document.getElementById('figure-original').href = figure.href
+        dialog.showModal()
+        document.documentElement.classList.add('figure-open')
+    })
+    document.getElementById('figure-close').addEventListener('click', () => dialog.close())
+    dialog.addEventListener('click', event => {
+        const bounds = dialog.getBoundingClientRect()
+        if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close()
+    })
+    dialog.addEventListener('close', () => document.documentElement.classList.remove('figure-open'))
+}
+
 // Preserve formula support without downloading MathJax on pages that have no formulas.
 function typesetMath(markdown) {
     if (!/\$|\\\(|\\\[|\\begin\{/.test(markdown)) return
@@ -130,6 +152,7 @@ async function setLanguage(language) {
 
 window.addEventListener('DOMContentLoaded', () => {
     marked.use({ mangle: false, headerIds: false })
+    setupPublicationFigures()
     const mainNav = document.getElementById('mainNav')
     const updateNavbar = () => mainNav.classList.toggle('nav-scrolled', window.scrollY > 18)
     updateNavbar()

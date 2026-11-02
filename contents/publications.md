@@ -1,5 +1,10 @@
 <article class="publication-item" aria-labelledby="paper-auditcoder">
-  <div class="publication-year">2026</div>
+  <div class="publication-visual">
+    <div class="publication-year">2026</div>
+    <a class="publication-figure" href="static/assets/img/publications/auditcoder-framework.png" aria-label="Enlarge the AuditCoder framework figure" aria-haspopup="dialog" data-figure-title="AuditCoder · Responsibility-preserving generation and repair">
+      <img src="static/assets/img/publications/auditcoder-framework-thumb.webp" width="480" height="388" alt="AuditCoder workflow linking responsibility-preserving construction with attribution-guided bounded repair" loading="lazy" decoding="async" />
+    </a>
+  </div>
   <div>
     <h3 class="publication-title" id="paper-auditcoder"><a href="https://arxiv.org/abs/2607.29529v2" target="_blank">AuditCoder: Process-Auditable Code Generation through Responsibility-Preserving Task Graphs</a></h3>
     <p class="publication-authors"><strong>Kangjie Huang</strong>, Hui Zhou, Chen Lyu</p>
@@ -10,7 +15,12 @@
 </article>
 
 <article class="publication-item" aria-labelledby="paper-fs-flownet">
-  <div class="publication-year">2026</div>
+  <div class="publication-visual">
+    <div class="publication-year">2026</div>
+    <a class="publication-figure" href="static/assets/img/publications/fs-flownet-framework.png" aria-label="Enlarge the FS-FlowNet architecture figure" aria-haspopup="dialog" data-figure-title="FS-FlowNet · Overall architecture">
+      <img src="static/assets/img/publications/fs-flownet-framework-thumb.webp" width="480" height="226" alt="FS-FlowNet architecture combining an enhanced U-Net with dual-domain fusion and residual flow field refinement" loading="lazy" decoding="async" />
+    </a>
+  </div>
   <div>
     <h3 class="publication-title" id="paper-fs-flownet"><a href="https://doi.org/10.1109/TGRS.2026.3663290" target="_blank">FS-FlowNet: Frequency–Spatial Dual-Domain Residual Flow Network for Remote Sensing Dehazing</a></h3>
     <p class="publication-authors">Yucheng Xin, <strong>Kangjie Huang</strong>, Xinchun Wang, Dianjie Lu, Guijuan Zhang, Ruize Wu, Zhuoran Zheng</p>

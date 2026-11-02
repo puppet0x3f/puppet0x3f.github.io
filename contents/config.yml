@@ -26,6 +26,8 @@ ui:
   menu-label: Toggle navigation
   photo-open-label: View the full photo of Huang Kangjie
   back-to-top: Back to top
+  figure-close: Close figure
+  figure-original: View original
 
 profile_links:
   - label: Email
