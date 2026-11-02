@@ -33,5 +33,4 @@
   <p class="project-meta">Project No. 2025190101 · Funding: CNY 15,000</p>
 </article>
 
-<p class="tools-note"><strong>Languages and tools.</strong> Python, C++, Java; PyTorch, Hugging Face, LoRA/QLoRA; Docker, Git, Linux, and LaTeX.</p>
 

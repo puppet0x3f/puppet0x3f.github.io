@@ -33,5 +33,4 @@
   <p class="project-meta">项目编号：2025190101 · 资助经费：1.5 万元</p>
 </article>
 
-<p class="tools-note"><strong>编程与工具：</strong>Python、C++、Java；PyTorch、Hugging Face、LoRA/QLoRA；Docker、Git、Linux、LaTeX。</p>
 
