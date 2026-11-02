@@ -1,12 +1,18 @@
 <dl class="dated-list">
   <div>
-    <dt>2025</dt>
-    <dd><strong>Third Prize, Team Category</strong><br>Lanqiao Cup Programming Contest, National Level</dd>
+    <dt>2026.10</dt>
+    <dd><strong>First Prize, Shandong Province</strong><br>China Undergraduate Mathematical Contest in Modeling</dd>
   </div>
   <div>
-    <dt>2024–present</dt>
-    <dd><strong>ACM Team Member</strong><br>Shandong Normal University</dd>
+    <dt>2025.11</dt>
+    <dd><strong>Third Prize</strong><br>Asia-Pacific Mathematical Contest in Modeling</dd>
+  </div>
+  <div>
+    <dt>2025.09</dt>
+    <dd><strong>Principal Investigator</strong><br>Undergraduate Research Fund</dd>
+  </div>
+  <div>
+    <dt>2025.03</dt>
+    <dd><strong>National Team Third Prize</strong><br>Programming Ladder Tournament</dd>
   </div>
 </dl>
-
-<p class="competition-note">Active participant in competitive programming, with experience in algorithmic problem solving and team collaboration.</p>

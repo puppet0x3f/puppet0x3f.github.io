@@ -1,17 +1,18 @@
-I am an undergraduate student in **Computer Science and Technology** at the [School of Information Science and Technology](https://www.sdnu.edu.cn/), [Shandong Normal University](https://www.sdnu.edu.cn/).
+I am an undergraduate student in **Computer Science and Technology** at the [School of Computer Science and Artificial Intelligence](https://ischool.sdnu.edu.cn/), [Shandong Normal University](https://www.sdnu.edu.cn/).
 
-My research focuses on **trustworthy code generation** for complex industrial programming tasks. I am interested in using deep learning and reinforcement learning to make generated programs more reliable, interpretable, and useful in real software development.
+My research focuses on **task decomposition, process supervision, and verifiable execution for agents solving complex tasks**, and on how these mechanisms can support **agent post-training**. I am particularly interested in connecting task planning, responsibility boundaries, verification evidence, and execution feedback.
 
 <ul class="interest-list" aria-label="Research interests">
-  <li>Code Generation</li>
-  <li>Reinforcement Learning</li>
-  <li>Multi-Agent Systems</li>
+  <li>Agent Task Decomposition</li>
+  <li>Process Supervision</li>
+  <li>Verifiable Execution</li>
+  <li>Agent Post-Training</li>
 </ul>
 
 <dl class="profile-facts">
   <div>
     <dt>Education</dt>
-    <dd>Computer Science and Technology, B.Sc.<br><small>Shandong Normal University · 2024–present</small></dd>
+    <dd>Computer Science and Technology, B.Sc. student<br><small>Shandong Normal University · Sep. 2024–Jun. 2028 (expected)</small></dd>
   </div>
   <div>
     <dt>Advisor</dt>
@@ -20,6 +21,6 @@ My research focuses on **trustworthy code generation** for complex industrial pr
 </dl>
 
 <details class="short-bio">
-  <summary>Short bio</summary>
-  <p>I joined the university ACM team in my first semester and began research in my second semester.</p>
+  <summary>Selected coursework</summary>
+  <p>Java Web (100), Data Structures (98), Advanced Mathematics (98), C Programming (96), and Object-Oriented Programming (95).</p>
 </details>

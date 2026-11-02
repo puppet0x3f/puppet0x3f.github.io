@@ -1,32 +1,48 @@
-<h3 class="project-heading">Trustworthy Code Generation for Industrial-Level Complex Programming Tasks</h3>
-<p class="project-meta"><span>National Innovation Training Project</span><span>Principal Investigator</span><span>2025–present</span></p>
-
-This project studies how generated programs can become more reliable and easier to inspect. It focuses on representing code semantics, planning complex solutions in multiple stages, and exposing decision chains that developers can understand.
-
-<ul class="research-methods">
-  <li><strong>Semantic representation.</strong> Capture both the syntactic structures and semantic properties of source code.</li>
-  <li><strong>Multi-stage planning.</strong> Improve algorithmic skill acquisition and task decomposition through hierarchical planning.</li>
-  <li><strong>Interpretable decisions.</strong> Make the generation process traceable so developers can inspect model decisions.</li>
-  <li><strong>Industrial programming tasks.</strong> Study long-context and multi-step generation settings closer to real software development.</li>
+<ul class="research-focus">
+  <li><strong>Task decomposition and responsibility modeling.</strong> Study hierarchical decomposition, delegation, and responsibility boundaries for agents working on complex tasks.</li>
+  <li><strong>Process supervision and agent post-training.</strong> Turn verification evidence, responsibility transfers, and execution feedback into trajectory filtering and state–action supervision.</li>
+  <li><strong>Verifiable execution and bounded repair.</strong> Connect explicit contracts, execution checks, and auditable records to support controlled revision and recovery.</li>
+  <li><strong>Skill selection and composition.</strong> Investigate applicability conditions, prerequisite dependencies, and cross-domain skill composition under resource and execution constraints.</li>
 </ul>
 
-### Research Interests
+### Research Work
 
-<ul class="research-topics">
-  <li>Deep learning for code representation</li>
-  <li>Reinforcement learning for program synthesis</li>
-  <li>Multi-agent systems for collaborative coding</li>
-  <li>Trustworthy AI in software engineering</li>
-</ul>
+<article class="project-entry">
+  <h4 class="project-heading">AuditTrainer</h4>
+  <p class="project-meta"><span>Joint first author, listed first</span><span>Agent post-training</span></p>
+  <p>A post-training framework for recursive agents, using auditable responsibility transfers as supervision units. The work connects responsibility trees and provenance DAGs with trajectory filtering based on functional correctness and responsibility validity, state–next-action supervision, and QLoRA fine-tuning of Qwen3-8B.</p>
+</article>
+
+<article class="project-entry">
+  <h4 class="project-heading">DVC-Edit</h4>
+  <p class="project-meta"><span>First author</span><span>Agents for iterative web editing</span></p>
+  <p>Study decision–code–visual alignment through executable edit transactions that connect user requirements, code access scopes, visual effects, and preservation conditions. Design multi-task LoRA supervision and execution-feedback correction for visual grounding, impact prediction, task decomposition, and patch generation.</p>
+</article>
+
+<article class="project-entry">
+  <h4 class="project-heading">GeoJEV-Skill</h4>
+  <p class="project-meta"><span>Joint first author, listed second</span><span>Skill selection and composition</span></p>
+  <p>Investigate geometry-aware representations that preserve the applicability conditions and mode associations of skills. Design decision and training mechanisms that combine explicit contracts, verifiable execution feedback, and resource budgets for cross-domain skill selection and composition.</p>
+</article>
+
+<article class="funding-project">
+  <h3>Funded Project</h3>
+  <h4 class="project-heading">Core Technologies for Trustworthy Code Generation in Industrial-Level Complex Programming Tasks</h4>
+  <p class="project-meta"><span>National Innovation Training Project</span><span>Principal Investigator</span><span>Jun. 2025–present</span></p>
+  <p>This project provides an application setting for studying multimodal program representations, hierarchical task planning, traceable decision making, and verifiable execution in complex programming workflows.</p>
+  <p class="project-meta">Project No. 2025190101 · Funding: CNY 15,000</p>
+</article>
+
+<p class="tools-note"><strong>Languages and tools.</strong> Python, C++, Java; PyTorch, Hugging Face, LoRA/QLoRA; Docker, Git, Linux, and LaTeX.</p>
 
 <details class="collaborators">
   <summary>Collaborators</summary>
   <ul>
-    <li><strong>Jinrui Han</strong> (韩进瑞), Class of 2025, M.S. Student, School of Information Science and Technology, Shandong Normal University</li>
-    <li><strong>Dong Liu</strong> (刘栋), Class of 2025, Undergraduate Student, School of Information Science and Technology, Shandong Normal University</li>
-    <li><strong>Jingxin Ren</strong> (任敬信), Class of 2025, M.S. Student, School of Information Science and Technology, Shandong Normal University</li>
-    <li><strong>Yucheng Xin</strong> (辛裕城), Class of 2024, Undergraduate Student, School of Information Science and Technology, Shandong Normal University</li>
-    <li><strong>Xinchun Wang</strong> (王新春), Class of 2024, Undergraduate Student, School of Information Science and Technology, Shandong Normal University</li>
-    <li><strong>Daokun Shang</strong> (尚道坤), Class of 2025, Undergraduate Student, School of Information Science and Technology, Shandong Normal University</li>
+    <li><strong>Jinrui Han</strong> (韩进瑞), Class of 2025, M.S. Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
+    <li><strong>Dong Liu</strong> (刘栋), Class of 2025, Undergraduate Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
+    <li><strong>Jingxin Ren</strong> (任敬信), Class of 2025, M.S. Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
+    <li><strong>Yucheng Xin</strong> (辛裕城), Class of 2024, Undergraduate Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
+    <li><strong>Xinchun Wang</strong> (王新春), Class of 2024, Undergraduate Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
+    <li><strong>Daokun Shang</strong> (尚道坤), Class of 2025, Undergraduate Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
   </ul>
 </details>

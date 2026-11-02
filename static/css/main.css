@@ -84,13 +84,21 @@ html[lang="zh-CN"] .main-body { font-size: 16px; line-height: 1.95; }
 .short-bio summary, .collaborators summary { width: fit-content; cursor: pointer; color: #596d86; }
 .short-bio p { margin: 12px 0 0; font-size: 14px; }
 .publication-item { display: grid; grid-template-columns: 49px minmax(0, 1fr); gap: 18px; align-items: start; }
+.publication-item + .publication-item { margin-top: 25px; padding-top: 23px; border-top: 1px solid #edf0f4; }
 .publication-year { padding-top: 2px; color: #8a95a5; font-size: 14px; }
 .publication-item .publication-title { margin: 0 0 7px; font-size: 17px; font-weight: 700; line-height: 1.6; }
 .publication-title a { color: #2b4f7a; }
 .publication-venue { margin: 0 0 10px; color: #6e7b8c; font-size: 14px; line-height: 1.7; }
+.publication-authors { margin: 0 0 7px; color: #69768a; font-size: 13px; line-height: 1.8; }
+.publication-summary { margin: 0 0 12px; color: #607086; font-size: 14px; line-height: 1.8; }
 .publication-links { display: flex; gap: 14px; align-items: center; margin: 0; font-size: 13px; }
 .publication-links i { margin-left: 3px; font-size: 10px; }
 .project-heading { margin: 0 0 8px !important; font-size: 17px !important; }
+.project-entry { margin-top: 26px; }
+.research-focus { margin-bottom: 28px; }
+.research-focus li { margin-bottom: 10px; }
+.funding-project { margin-top: 28px; padding-top: 20px; border-top: 1px solid #edf0f4; }
+.tools-note { margin-top: 24px; color: #69788c; font-size: 14px; }
 .project-meta { margin-bottom: 16px; color: #7a8595; font-size: 13px; }
 .project-meta span + span::before { content: " / "; margin: 0 5px; color: #a9b2bf; }
 .research-methods { margin-top: 20px; }

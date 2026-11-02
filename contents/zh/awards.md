@@ -1,12 +1,18 @@
 <dl class="dated-list">
   <div>
-    <dt>2025</dt>
-    <dd><strong>蓝桥杯程序设计竞赛 · 全国赛团队赛三等奖</strong></dd>
+    <dt>2026.10</dt>
+    <dd><strong>全国大学生数学建模大赛 · 山东省一等奖</strong></dd>
   </div>
   <div>
-    <dt>2024 年至今</dt>
-    <dd><strong>山东师范大学 ACM 集训队成员</strong></dd>
+    <dt>2025.11</dt>
+    <dd><strong>亚太杯数学建模竞赛 · 三等奖</strong></dd>
+  </div>
+  <div>
+    <dt>2025.09</dt>
+    <dd><strong>本科生科研基金项目负责人</strong></dd>
+  </div>
+  <div>
+    <dt>2025.03</dt>
+    <dd><strong>天梯赛 · 团队国家三等奖</strong></dd>
   </div>
 </dl>
-
-<p class="competition-note">积极参与程序设计竞赛，在算法问题求解与团队协作中积累实践经验。</p>
