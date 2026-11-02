@@ -35,14 +35,3 @@
 
 <p class="tools-note"><strong>Languages and tools.</strong> Python, C++, Java; PyTorch, Hugging Face, LoRA/QLoRA; Docker, Git, Linux, and LaTeX.</p>
 
-<details class="collaborators">
-  <summary>Collaborators</summary>
-  <ul>
-    <li><strong>Jinrui Han</strong> (韩进瑞), Class of 2025, M.S. Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
-    <li><strong>Dong Liu</strong> (刘栋), Class of 2025, Undergraduate Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
-    <li><strong>Jingxin Ren</strong> (任敬信), Class of 2025, M.S. Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
-    <li><strong>Yucheng Xin</strong> (辛裕城), Class of 2024, Undergraduate Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
-    <li><strong>Xinchun Wang</strong> (王新春), Class of 2024, Undergraduate Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
-    <li><strong>Daokun Shang</strong> (尚道坤), Class of 2025, Undergraduate Student, School of Computer Science and Artificial Intelligence, Shandong Normal University</li>
-  </ul>
-</details>

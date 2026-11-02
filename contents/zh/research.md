@@ -35,14 +35,3 @@
 
 <p class="tools-note"><strong>编程与工具：</strong>Python、C++、Java；PyTorch、Hugging Face、LoRA/QLoRA；Docker、Git、Linux、LaTeX。</p>
 
-<details class="collaborators">
-  <summary>合作伙伴</summary>
-  <ul>
-    <li><strong>韩进瑞（Jinrui Han）</strong>，山东师范大学计算机与人工智能学院，2025 级硕士研究生</li>
-    <li><strong>刘栋（Dong Liu）</strong>，山东师范大学计算机与人工智能学院，2025 级本科生</li>
-    <li><strong>任敬信（Jingxin Ren）</strong>，山东师范大学计算机与人工智能学院，2025 级硕士研究生</li>
-    <li><strong>辛裕城（Yucheng Xin）</strong>，山东师范大学计算机与人工智能学院，2024 级本科生</li>
-    <li><strong>王新春（Xinchun Wang）</strong>，山东师范大学计算机与人工智能学院，2024 级本科生</li>
-    <li><strong>尚道坤（Daokun Shang）</strong>，山东师范大学计算机与人工智能学院，2025 级本科生</li>
-  </ul>
-</details>

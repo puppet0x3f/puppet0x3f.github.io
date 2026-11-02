@@ -14,13 +14,4 @@
     <dt>教育背景</dt>
     <dd>计算机科学与技术 · 本科在读<br><small>山东师范大学 · 2024.09–2028.06（预计）</small></dd>
   </div>
-  <div>
-    <dt>指导教师</dt>
-    <dd>吕晨（Chen Lyu）<br><a href="https://chenlyusdnu.github.io/me/" target="_blank">个人主页</a></dd>
-  </div>
 </dl>
-
-<details class="short-bio">
-  <summary>核心课程</summary>
-  <p>Java Web（100）、数据结构（98）、高等数学（98）、C 语言（96）、面向对象程序设计（95）。</p>
-</details>

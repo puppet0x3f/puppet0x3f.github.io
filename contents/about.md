@@ -14,13 +14,4 @@ My research focuses on **task decomposition, process supervision, and verifiable
     <dt>Education</dt>
     <dd>Computer Science and Technology, B.Sc. student<br><small>Shandong Normal University · Sep. 2024–Jun. 2028 (expected)</small></dd>
   </div>
-  <div>
-    <dt>Advisor</dt>
-    <dd>Chen Lyu (吕晨)<br><a href="https://chenlyusdnu.github.io/me/" target="_blank">Personal Homepage</a></dd>
-  </div>
 </dl>
-
-<details class="short-bio">
-  <summary>Selected coursework</summary>
-  <p>Java Web (100), Data Structures (98), Advanced Mathematics (98), C Programming (96), and Object-Oriented Programming (95).</p>
-</details>
