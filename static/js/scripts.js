@@ -60,10 +60,10 @@ function renderHeroLinks(links = []) {
     }))
 }
 
-function setupPublicationFigures() {
+function setupFigures() {
     const dialog = document.getElementById('figure-dialog')
     const image = document.getElementById('figure-dialog-image')
-    document.getElementById('publications-md').addEventListener('click', event => {
+    document.getElementById('main-content').addEventListener('click', event => {
         const figure = event.target.closest('.publication-figure')
         if (!figure || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return
         event.preventDefault()
@@ -152,7 +152,7 @@ async function setLanguage(language) {
 
 window.addEventListener('DOMContentLoaded', () => {
     marked.use({ mangle: false, headerIds: false })
-    setupPublicationFigures()
+    setupFigures()
     const mainNav = document.getElementById('mainNav')
     const updateNavbar = () => mainNav.classList.toggle('nav-scrolled', window.scrollY > 18)
     updateNavbar()

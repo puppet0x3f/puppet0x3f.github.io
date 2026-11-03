@@ -7,10 +7,15 @@
 
 ### Research Work
 
-<article class="project-entry">
-  <h4 class="project-heading">AuditTrainer</h4>
-  <p class="project-meta"><span>Joint first author, listed first</span><span>Agent post-training</span></p>
-  <p>A post-training framework for recursive agents, using auditable responsibility transfers as supervision units. The work connects responsibility trees and provenance DAGs with trajectory filtering based on functional correctness and responsibility validity, state–next-action supervision, and QLoRA fine-tuning of Qwen3-8B.</p>
+<article class="project-entry project-with-figure" aria-labelledby="project-audittrainer">
+  <a class="publication-figure" href="static/assets/img/publications/audittrainer-method.png" aria-label="Enlarge the AuditTrainer method figure" aria-haspopup="dialog" data-figure-title="AuditTrainer · Method overview">
+    <img src="static/assets/img/publications/audittrainer-method-thumb.webp" width="480" height="196" alt="AuditTrainer method: trajectory collection, responsibility audit selection, context-preserving sample construction, and supervised and responsibility-aware reinforcement learning" loading="lazy" decoding="async" />
+  </a>
+  <div>
+    <h4 class="project-heading" id="project-audittrainer">AuditTrainer</h4>
+    <p class="project-meta"><span>Joint first author, listed first</span><span>Agent post-training</span></p>
+    <p>A post-training framework for recursive agents, using auditable responsibility transfers as supervision units. The work connects responsibility trees and provenance DAGs with trajectory filtering based on functional correctness and responsibility validity, state–next-action supervision, and QLoRA fine-tuning of Qwen3-8B.</p>
+  </div>
 </article>
 
 <article class="project-entry">

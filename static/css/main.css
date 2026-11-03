@@ -83,7 +83,7 @@ html[lang="zh-CN"] .main-body { font-size: 16px; line-height: 1.95; }
 .short-bio { margin-top: 18px; font-size: 14px; }
 .short-bio summary, .collaborators summary { width: fit-content; cursor: pointer; color: #596d86; }
 .short-bio p { margin: 12px 0 0; font-size: 14px; }
-.publication-item { display: grid; grid-template-columns: 176px minmax(0, 1fr); gap: 22px; align-items: start; }
+.publication-item, .project-with-figure { display: grid; grid-template-columns: 176px minmax(0, 1fr); gap: 22px; align-items: start; }
 .publication-item + .publication-item { margin-top: 25px; padding-top: 23px; border-top: 1px solid #edf0f4; }
 .publication-year { margin-bottom: 9px; color: #8a95a5; font-size: 13px; line-height: 1.6; }
 .publication-figure { display: block; color: var(--muted) !important; cursor: zoom-in; }
@@ -164,7 +164,7 @@ html.figure-open { overflow: hidden; }
     .profile-name { font-size: 25px; }
     .profile-facts { grid-template-columns: 1fr; gap: 15px; }
     .contact-list { grid-template-columns: 1fr; }
-    .publication-item { grid-template-columns: 1fr; gap: 14px; }
+    .publication-item, .project-with-figure { grid-template-columns: 1fr; gap: 14px; }
     .publication-visual { display: flex; align-items: flex-start; gap: 15px; }
     .publication-year { margin-top: 2px; margin-bottom: 0; }
     .publication-figure { width: 176px; }

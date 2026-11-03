@@ -7,10 +7,15 @@
 
 ### 研究工作
 
-<article class="project-entry">
-  <h4 class="project-heading">AuditTrainer</h4>
-  <p class="project-meta"><span>共同第一作者，排名第一</span><span>智能体后训练</span></p>
-  <p>以可审计责任转移为监督单元，研究递归智能体的后训练。结合责任树、来源 DAG 与“功能正确性＋责任有效性”双门控轨迹筛选，构建状态—下一动作监督，并结合 Qwen3-8B 的 QLoRA 微调与递归运行时回接。</p>
+<article class="project-entry project-with-figure" aria-labelledby="project-audittrainer">
+  <a class="publication-figure" href="static/assets/img/publications/audittrainer-method.png" aria-label="放大查看 AuditTrainer 方法图" aria-haspopup="dialog" data-figure-title="AuditTrainer · 方法概览">
+    <img src="static/assets/img/publications/audittrainer-method-thumb.webp" width="480" height="196" alt="AuditTrainer 方法：轨迹收集、责任审计筛选、保留上下文的样本构建，以及监督微调与责任感知强化学习" loading="lazy" decoding="async" />
+  </a>
+  <div>
+    <h4 class="project-heading" id="project-audittrainer">AuditTrainer</h4>
+    <p class="project-meta"><span>共同第一作者，排名第一</span><span>智能体后训练</span></p>
+    <p>以可审计责任转移为监督单元，研究递归智能体的后训练。结合责任树、来源 DAG 与“功能正确性＋责任有效性”双门控轨迹筛选，构建状态—下一动作监督，并结合 Qwen3-8B 的 QLoRA 微调与递归运行时回接。</p>
+  </div>
 </article>
 
 <article class="project-entry">
