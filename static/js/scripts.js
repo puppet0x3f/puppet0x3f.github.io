@@ -4,6 +4,39 @@ const iconMap = { github: 'bi-github', scholar: 'bi-book', email: 'bi-envelope',
 let languageRequest = 0
 let scrollSpy
 
+function updateThemeControl() {
+    const button = document.getElementById('theme-toggle')
+    const dark = document.documentElement.dataset.theme === 'dark'
+    const chinese = document.documentElement.lang === 'zh-CN'
+    button.setAttribute('aria-pressed', String(dark))
+    button.setAttribute('aria-label', chinese ? '深色模式' : 'Dark mode')
+    button.title = chinese
+        ? (dark ? '切换到浅色模式' : '切换到深色模式')
+        : (dark ? 'Switch to light mode' : 'Switch to dark mode')
+    button.querySelector('i').className = dark ? 'bi bi-sun' : 'bi bi-moon-stars'
+}
+
+function setupTheme() {
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
+    let manualPreference = false
+    try { manualPreference = ['light', 'dark'].includes(localStorage.getItem('homepage-theme')) } catch (_) { /* Optional preference. */ }
+    const applyTheme = theme => {
+        document.documentElement.dataset.theme = theme
+        document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#15191f' : '#ffffff'
+        updateThemeControl()
+    }
+    updateThemeControl()
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+        const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'
+        manualPreference = true
+        applyTheme(theme)
+        try { localStorage.setItem('homepage-theme', theme) } catch (_) { /* Switching still works without storage. */ }
+    })
+    systemTheme.addEventListener('change', event => {
+        if (!manualPreference) applyTheme(event.matches ? 'dark' : 'light')
+    })
+}
+
 function setText(id, value) {
     const element = document.getElementById(id)
     if (element && value !== undefined) element.textContent = value
@@ -123,6 +156,7 @@ async function setLanguage(language) {
         })
 
         document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en'
+        updateThemeControl()
         document.title = config.title
         document.querySelector('meta[name="description"]').content = config.description
         document.getElementById('hero-photo').alt = config['photo-alt']
@@ -151,6 +185,7 @@ async function setLanguage(language) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+    setupTheme()
     marked.use({ mangle: false, headerIds: false })
     setupFigures()
     const mainNav = document.getElementById('mainNav')
