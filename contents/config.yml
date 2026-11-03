@@ -2,6 +2,7 @@ title: Huang Kangjie | Academic Homepage
 description: Academic homepage of Huang Kangjie at Shandong Normal University. Research on agent task decomposition, process supervision, verifiable execution, and agent post-training.
 page-top-title: Huang Kangjie
 about-subtitle: About Me
+news-subtitle: News
 research-subtitle: Research & Projects
 publications-subtitle: Selected Publications
 awards-subtitle: Honors & Experience
@@ -16,6 +17,7 @@ photo-alt: Portrait of Huang Kangjie
 
 ui:
   nav-about: About
+  nav-news: News
   nav-research: Research
   nav-publications: Publications
   nav-awards: Honors

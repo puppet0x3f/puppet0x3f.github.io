@@ -2,6 +2,7 @@ title: 黄康杰 | 学术主页
 description: 黄康杰的学术主页。研究面向复杂任务的智能体任务分解、过程监督与可验证执行，并探索这些机制如何服务于智能体后训练。山东师范大学计算机科学与技术本科生。
 page-top-title: 黄康杰
 about-subtitle: 关于我
+news-subtitle: 新闻
 research-subtitle: 研究与项目
 publications-subtitle: 学术论文
 awards-subtitle: 荣誉与经历
@@ -16,6 +17,7 @@ photo-alt: 黄康杰的个人照片
 
 ui:
   nav-about: 关于
+  nav-news: 新闻
   nav-research: 研究
   nav-publications: 论文
   nav-awards: 经历

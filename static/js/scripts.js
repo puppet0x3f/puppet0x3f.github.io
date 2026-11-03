@@ -1,4 +1,4 @@
-const sectionNames = ['about', 'research', 'publications', 'awards', 'contact']
+const sectionNames = ['about', 'news', 'publications', 'research', 'awards', 'contact']
 const languageCache = new Map()
 const iconMap = { github: 'bi-github', scholar: 'bi-book', email: 'bi-envelope', website: 'bi-link-45deg' }
 let languageRequest = 0

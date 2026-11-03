@@ -124,6 +124,10 @@ html.figure-open { overflow: hidden; }
 .dated-list > div:last-child { margin-bottom: 0; }
 .dated-list dt { padding-top: 1px; color: #8390a1; font-size: 13px; font-weight: 400; }
 .dated-list dd { margin: 0; color: #3c4859; font-size: 15px; }
+.news-list > div { grid-template-columns: 132px minmax(0, 1fr); }
+.news-list dt { white-space: nowrap; }
+.news-list dd p { margin-bottom: 10px; }
+.news-list dd p:last-child { margin-bottom: 0; }
 .competition-note { margin-top: 19px; color: #7c8796; font-size: 14px; }
 .contact-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 25px; list-style: none; padding: 0 !important; margin: 0; }
 .contact-list li { display: flex; align-items: baseline; gap: 9px; min-width: 0; margin: 0; padding: 0; font-size: 14px; }
@@ -189,6 +193,7 @@ html.figure-open { overflow: hidden; }
     .dated-list > div { grid-template-columns: 85px minmax(0, 1fr); gap: 14px; }
     .dated-list dt { font-size: 12px; }
     .dated-list dd { font-size: 14px; }
+    .news-list > div { grid-template-columns: 1fr; gap: 6px; }
     .contact-list { gap: 10px; }
 }
 @media (max-width: 359.98px) {
